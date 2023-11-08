@@ -38,64 +38,51 @@
 ### ●	Select the options of process of pre-processing in the sequence in which they are shown.
 ### ●	If the user follows an incorrect sequence then a pop-up will appear on the screen showing the name of the process to be selected.
 
-## OUTPUT:
-![123_1](https://github.com/Sellakumar1987/Ex.-No.-7---SIMULATION-OF-PRE--PROCESSING-IN-ADDITIVE-MANUFACTURING/assets/113594316/ec8dafd7-cb7c-4a5b-936c-41e86a32a9da)
-![123_2](https://github.com/Sellakumar1987/Ex.-No.-7---SIMULATION-OF-PRE--PROCESSING-IN-ADDITIVE-MANUFACTURING/assets/113594316/c071a941-e5b4-4b31-af63-5f9fe08cd0fb)
-![123_3](https://github.com/Sellakumar1987/Ex.-No.-7---SIMULATION-OF-PRE--PROCESSING-IN-ADDITIVE-MANUFACTURING/assets/113594316/ebb3a944-eeb0-45e8-9841-d58997840c54)
+
 
 ## Output:
-## CAD File Preparation:
-![100](https://github.com/JeevaGowtham-S/Ex.-No.-7---SIMULATION-OF-PRE--PROCESSING-IN-ADDITIVE-MANUFACTURING/assets/118042624/eae69399-e75c-4cec-a8f3-ca82aafd46aa)
-## Explanation:
-Model Design: Begin with creating or obtaining a 3D model using computer-aided design (CAD) software. Design the model according to your specifications and intended use.
+### CAD file preparation
 
-Geometry Optimization: Check and optimize the geometry of your CAD model. Ensure that it is watertight, meaning it has no holes or gaps in the mesh. Repair any issues with the geometry using CAD software or dedicated mesh repair tools.
+The first step in rapid prototyping is to prepare a computer-aided design (CAD) model of the object to be fabricated using layer based manufacturing processes.Once this process complete,the model is either converted or exported as STL file.
 
-Scaling and Orientation: Adjust the size and orientation of the model as per your requirements. Consider the limitations and capabilities of your 3D printer and choose the appropriate size and orientation for successful printing.
+![image](https://github.com/gururamu08/Ex.-No.-7---SIMULATION-OF-PRE--PROCESSING-IN-ADDITIVE-MANUFACTURING/assets/118707009/ab3d3258-17de-485b-9a12-ef589c70c662)
 
-## Conversion of STL:
-![200](https://github.com/JeevaGowtham-S/Ex.-No.-7---SIMULATION-OF-PRE--PROCESSING-IN-ADDITIVE-MANUFACTURING/assets/118042624/ac2cddc1-55be-416a-8698-5d87e86183b4)
-## Explanation:
-Converting a 3D model to the STL (Standard Tessellation Language) file format is a common pre-processing step in 3D printing. The STL format represents the surface geometry of the object as a collection of interconnected triangles.
+### Conversion to STL
 
-Use a 3D modeling software that supports the STL file format. Some popular options include Autodesk Fusion 360, Blender, SolidWorks, or Tinkercad. Make sure your software is set up and ready to export to STL.
+STL file is also known standard tesstellation language in which model is represented as triangular patterns.It covers only the information about surface structure of the model not the internal features.on CAD software itself ,it process and convert CAD file into STL file.
 
-Once your model is ready, export it to the STL file format. In your chosen 3D modeling software, look for an option to export or save the model as an STL file. You may be asked to specify the file name and location for the exported STL file.
+![image](https://github.com/gururamu08/Ex.-No.-7---SIMULATION-OF-PRE--PROCESSING-IN-ADDITIVE-MANUFACTURING/assets/118707009/3cc997d4-874a-463b-831b-374b96a7ef84)
 
-## Orientation:
-![300](https://github.com/JeevaGowtham-S/Ex.-No.-7---SIMULATION-OF-PRE--PROCESSING-IN-ADDITIVE-MANUFACTURING/assets/118042624/46280586-bbe4-4700-a834-f6356bac8ea1)
-## Explanation:
-Orientation plays a crucial role in the pre-processing stage of 3D printing. Choosing the right orientation for your 3D model can significantly impact the quality, strength, and overall success of your print.
 
-Orienting your model in a way that aligns with the printer's optimal speed axes can result in faster and more efficient printing. Optimizing the orientation can help reduce the overall print time and minimize material usage. Orienting your model to minimize unnecessary supports or reduce the number of retractions and travel moves can improve efficiency.
+### Orientation
 
-## Support Structure:
-![400](https://github.com/JeevaGowtham-S/Ex.-No.-7---SIMULATION-OF-PRE--PROCESSING-IN-ADDITIVE-MANUFACTURING/assets/118042624/ddb1bc2f-c849-40ed-b4e2-4f39d643be9b)
+In slicer software STL file is loaded .The object orientation is need to be check.without proper orientation ,time and excess material can be consumed.A proper orientation increase strength of the model .The model should be printed along the direction of force that going to withstand.
 
-## Explanation:
-Support structures are often necessary in 3D printing to provide stability and prevent overhangs and unsupported features from collapsing during the printing process. These structures act as temporary supports for overhanging or complex geometries and are typically removed after printing.
+![image](https://github.com/gururamu08/Ex.-No.-7---SIMULATION-OF-PRE--PROCESSING-IN-ADDITIVE-MANUFACTURING/assets/118707009/65c324c1-508f-4f09-8323-e95ae51b6e3c)
 
-Slicing software often provides options to adjust support parameters. These parameters include support density, support pattern, support angle, and others. Depending on the specific requirements of your model, you can customize these settings to optimize the support structure generation.
 
-Once you are satisfied with the support structures, generate the final sliced file that includes the model and the support structures. This file is then sent to the 3D printer for the printing process.
+### Support structure
 
-## slicing:
-![500](https://github.com/JeevaGowtham-S/Ex.-No.-7---SIMULATION-OF-PRE--PROCESSING-IN-ADDITIVE-MANUFACTURING/assets/118042624/9f17eff6-d6b4-484d-af37-8651fe4afc5c)
-## EXPLANATION:
-It involves taking a 3D model, dividing it into layers, and generating the instructions that the 3D printer will use to create each layer.Start by importing your 3D model into slicing software. This software takes various file formats, such as STL or OBJ, and prepares the model for printing.Determine the slicing parameters, which include settings like layer height, infill density, print speed, and shell thickness. These settings define the quality, strength, and speed of the print. Higher layer heights and infill densities result in faster but less detailed prints, while lower layer heights and higher infill densities produce more detailed and stronger prints at the cost of longer print times and increased material usage.
+As we see before proper orientation need lesser support material .But at some places there might be need of support material which supports overhanging parts(ie.,angle above 45).However they need to be removed after printing.
 
-Save the sliced file in a format compatible with your 3D printer, such as G-code.
+![image](https://github.com/gururamu08/Ex.-No.-7---SIMULATION-OF-PRE--PROCESSING-IN-ADDITIVE-MANUFACTURING/assets/118707009/4f633cfe-f40d-44be-a88c-6ee823ba5b67)
 
-## Path Planning:
-![600](https://github.com/JeevaGowtham-S/Ex.-No.-7---SIMULATION-OF-PRE--PROCESSING-IN-ADDITIVE-MANUFACTURING/assets/118042624/66b2b58f-9039-4977-a1f9-7ade022c7bb0)
-## EXPLANATION:
-Path planning, also known as toolpath generation, is a crucial aspect of pre-processing in 3D printing. It involves determining the optimal paths that the 3D printer's nozzle or toolhead will follow to create each layer of the printed object.
 
-Once the perimeters and shells are defined, the algorithm generates paths for infill, which fills the interior of the model to provide support and strength. Different infill patterns, such as grid, honeycomb, or gyroid, can be used. The infill density determines the spacing and pattern complexity of the paths.
+### Slicing
 
-The path planning algorithm generates the final set of machine instructions, typically in G-code format. These instructions include the precise movements, print head speeds, extrusion rates, and other parameters that the 3D printer will use to create the object.
-### Name:JEEVAGOWTHAM S
-### Register Number: 212222230053
+slicing is converting digital 3D models into printing instructions for a given 3D printer to build an object. In addition to the model itself, the instructions contain user-entered 3D printing parameters, such as layer height, speed, and support structure settings.
 
+![image](https://github.com/gururamu08/Ex.-No.-7---SIMULATION-OF-PRE--PROCESSING-IN-ADDITIVE-MANUFACTURING/assets/118707009/75d63918-d2b9-44af-9803-abb4af2420a3)
+
+
+### Path planning
+
+The infill pattern determines the arrangement of the internal structure within the 3D printed object. Common infill patterns include rectilinear, honeycomb, grid, and concentric. Each pattern has its own characteristics in terms of strength, material usage, print time, and surface finish. The choice of infill pattern depends on the specific requirements of the printed object
+
+![image](https://github.com/gururamu08/Ex.-No.-7---SIMULATION-OF-PRE--PROCESSING-IN-ADDITIVE-MANUFACTURING/assets/118707009/07c34e2e-4094-4905-a36f-7a670c21ddaa)
+
+
+### Name: RONICK AAKSHATH P
+### Register Number: 212222240084
 ## Result: 
 ### Thus the simulation on the Preprocessing in additive manufacturing is completed.
