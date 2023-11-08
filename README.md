@@ -46,8 +46,8 @@
 ## Output:
 ![1](https://github.com/Prajeeth17/Ex.-No.-7---SIMULATION-OF-PRE--PROCESSING-IN-ADDITIVE-MANUFACTURING/assets/120513885/115ce469-b900-4789-9e81-fc710bf16c65)
 
-### Name: Prajeeth K T
-### Register Number: 212222110034
+### Name: JEEVAGOWTHAM S
+### Register Number: 212222230053
 
 ## Result: 
 ### Thus the simulation on the Preprocessing in additive manufacturing is completed.
